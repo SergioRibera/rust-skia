@@ -19,20 +19,6 @@ jobs:
         features: ["gl,svg,textlayout"]
         target: ["aarch64-linux-android", "x86_64-linux-android", "i686-linux-android"]
         include:
-          - target: x86_64-unknown-linux-gnu
-            androidEnv: false
-            emscriptenEnv: false
-            runClippy: true
-            runTests: true
-            exampleArgs: ''
-            generateArtifacts: false
-          - target: aarch64-unknown-linux-gnu
-            androidEnv: false
-            emscriptenEnv: false
-            runClippy: false
-            runTests: false
-            exampleArgs: ''
-            generateArtifacts: false
           - target: aarch64-linux-android
             androidEnv: true
             emscriptenEnv: false
