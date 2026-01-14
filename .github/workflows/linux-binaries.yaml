@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - freya-release
+      - release
 
 concurrency:
   group: 'linux-binaries-${{ github.ref }}'
